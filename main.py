@@ -98,7 +98,7 @@ try:
             for object_id, pt in tracking_objects.items():
                 for object_id1, pt1 in speed_checks.items():
                     if object_id == object_id1:
-                        text = str(round(pt1*5,2)) +"km/h"
+                        text = str(round(pt1*5,2)) +"km/h" #phần này nên có công thức tính toán cụ thể, lười nên để vậy :)
                         cv2.putText(frame,text, (pt[0], pt[1] +20), cv2.FONT_HERSHEY_DUPLEX,1, (100, 0, 255), 1)
 
 
